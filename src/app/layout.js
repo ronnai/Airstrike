@@ -43,8 +43,7 @@ export const metadata = {
   openGraph: {
     title: "Gilbert Air Strike | Flag Football",
     description:
-      "Development-first flag football for boys and girls, 8U through high school.",
-    images: ["/images/hero-team.jpg"],
+      "Development-first flag football for boys and girls, 8U through high school. Gilbert, Arizona.",
   },
 };
 
