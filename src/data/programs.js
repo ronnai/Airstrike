@@ -7,7 +7,7 @@ export const PROGRAMS = {
     color: "var(--red)",
     colorRaw: "#CC0000",
     colorGlow: "rgba(204,0,0,0.3)",
-    logo: "/images/gas-logo.jpg",
+    logo: "/images/las-logo.jpg",
     heroImage: "/images/hero-team-red.jpg",
   },
   girls: {
@@ -18,7 +18,7 @@ export const PROGRAMS = {
     color: "var(--teal)",
     colorRaw: "#4EEEB0",
     colorGlow: "rgba(78,238,176,0.3)",
-    logo: "/images/las-logo.jpg",
+    logo: "/images/gas-logo.jpg",
     heroImage: "/images/hero-team.jpg",
   },
 };
