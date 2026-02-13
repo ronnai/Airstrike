@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AnthemButton from "./AnthemButton";
 
 export default function Hero() {
   return (
@@ -65,6 +66,7 @@ export default function Hero() {
             Girls Program
           </Link>
         </div>
+        <AnthemButton />
       </div>
 
       <div style={{

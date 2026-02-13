@@ -4,20 +4,26 @@ import { useState, useEffect, useRef } from "react";
 
 export function useInView(threshold = 0) {
   const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    const show = () => setVisible(true);
-    const fallback = setTimeout(show, 3000);
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      setVisible(true);
+      return;
+    }
+
+    setShouldAnimate(true);
+    setVisible(false);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          show();
-          clearTimeout(fallback);
+          setVisible(true);
           observer.disconnect();
         }
       },
@@ -25,13 +31,10 @@ export function useInView(threshold = 0) {
     );
 
     observer.observe(el);
-    return () => {
-      observer.disconnect();
-      clearTimeout(fallback);
-    };
+    return () => observer.disconnect();
   }, [threshold]);
 
-  return [ref, visible];
+  return [ref, visible, shouldAnimate];
 }
 
 export function fadeUp(visible, delay = 0) {
