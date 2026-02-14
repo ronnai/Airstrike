@@ -4,12 +4,29 @@ import Image from "next/image";
 import { useInView, fadeUp } from "@/hooks/useInView";
 
 const PHOTOS = [
-  { src: "/images/hero-team.jpg", cols: 2 },
+  // Row 1: 2+1=3
+  { src: "/images/action-1.jpg", cols: 2 },
+  { src: "/images/action-3.jpg", cols: 1 },
+  // Row 2: 1+1+1=3
+  { src: "/images/hero-team.jpg", cols: 1 },
+  { src: "/images/action-7.jpg", cols: 1 },
   { src: "/images/action-teal.jpg", cols: 1 },
+  // Row 3: 1+2=3
+  { src: "/images/action-9.jpg", cols: 1 },
+  { src: "/images/action-4.jpg", cols: 2 },
+  // Row 4: 1+1+1=3
+  { src: "/images/action-10.jpg", cols: 1 },
   { src: "/images/kids-group.jpg", cols: 1 },
+  { src: "/images/action-12.jpg", cols: 1 },
+  // Row 5: 2+1=3
+  { src: "/images/action-11.jpg", cols: 2 },
   { src: "/images/jersey3-teal.jpg", cols: 1 },
-  { src: "/images/coaches.jpg", cols: 1 },
-  { src: "/images/kids-group-red.jpg", cols: 1 },
+  // Row 6: 1+1+1=3
+  { src: "/images/action-13.jpg", cols: 1 },
+  { src: "/images/action-14.jpg", cols: 1 },
+  { src: "/images/action-5.jpg", cols: 1 },
+  // Row 7: 1+2=3
+  { src: "/images/action-6.jpg", cols: 1 },
   { src: "/images/hero-team-red.jpg", cols: 2 },
 ];
 
