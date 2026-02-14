@@ -167,21 +167,21 @@ function MvpCard({ tier, style }) {
           </span>
         </div>
         <div style={{
-          display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "10px 32px",
+          display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+          gap: "14px 40px",
         }}>
           {tier.benefits.map((b, i) => (
             <div key={i} style={{
-              fontSize: 14, lineHeight: 1.6, color: "rgba(255,255,255,0.7)",
-              paddingLeft: 16, borderLeft: `2px solid ${tier.accent}`,
+              fontSize: 17, lineHeight: 1.7, color: "rgba(255,255,255,0.7)",
+              paddingLeft: 18, borderLeft: `2px solid ${tier.accent}`,
             }}>
               {b}
             </div>
           ))}
         </div>
         <div style={{
-          marginTop: 20, fontFamily: "var(--font-barlow-condensed)",
-          fontSize: 12, letterSpacing: 2, color: "rgba(255,255,255,0.3)",
+          marginTop: 24, fontFamily: "var(--font-barlow-condensed)",
+          fontSize: 14, letterSpacing: 2, color: "rgba(255,255,255,0.3)",
         }}>
           {tier.benefits.length} BENEFITS INCLUDED
         </div>
