@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "Boys Program", href: "/boys" },
   { label: "Girls Program", href: "/girls" },
   { label: "About", href: "/#about" },
+  { label: "Sponsor", href: "/sponsor" },
   { label: "Contact", href: "/#contact" },
   { label: "Player Portal", href: "/portal" },
 ];
