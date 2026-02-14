@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useInView, fadeUp } from "@/hooks/useInView";
 
 const STATS = [
@@ -85,35 +84,6 @@ export default function About() {
               offer elite-level coaching, individualized player evaluations, and a culture built
               on accountability and growth. This isn&apos;t rec ball. This is Air Strike.
             </p>
-          </div>
-
-          <div style={{ position: "relative" }}>
-            <Image
-              src="/images/kids-group.jpg"
-              alt="Air Strike athletes"
-              width={1400}
-              height={600}
-              style={{ width: "100%", height: "auto", borderRadius: 16, boxShadow: "0 24px 64px rgba(0,0,0,0.12)" }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                bottom: -16,
-                right: 24,
-                background: "var(--red)",
-                borderRadius: 10,
-                padding: "12px 20px",
-                boxShadow: "0 8px 30px rgba(204,0,0,0.3)",
-              }}
-            >
-              <Image
-                src="/images/allgas.png"
-                alt="All Gas No Brakes"
-                width={120}
-                height={28}
-                style={{ height: 28, width: "auto", filter: "brightness(0) invert(1)" }}
-              />
-            </div>
           </div>
         </div>
 
