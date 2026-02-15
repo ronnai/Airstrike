@@ -1,6 +1,11 @@
 "use client";
 
 import { useInView, fadeUp } from "@/hooks/useInView";
+import DividerHeroAbout from "./DividerHeroAbout";
+import DividerAboutCoaches from "./DividerAboutCoaches";
+import DividerCoachesGallery from "./DividerCoachesGallery";
+import DividerGalleryContact from "./DividerGalleryContact";
+import DividerContactFooter from "./DividerContactFooter";
 
 const TIERS = [
   {
@@ -63,10 +68,15 @@ export default function SponsorContent() {
   return (
     <div ref={ref}>
       <SponsorHero visible={visible} />
+      <DividerHeroAbout />
       <TierGrid visible={visible} />
+      <DividerCoachesGallery />
       <MissionSection visible={visible} />
+      <DividerAboutCoaches />
       <DirectorMessage visible={visible} />
+      <DividerGalleryContact />
       <ContactSection visible={visible} />
+      <DividerContactFooter />
     </div>
   );
 }

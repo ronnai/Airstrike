@@ -1,7 +1,9 @@
 import { getProgram } from "@/data/programs";
 import Navbar from "@/components/Navbar";
 import ProgramHero from "@/components/ProgramHero";
+import DividerHeroAbout from "@/components/DividerHeroAbout";
 import AgeGroupGrid from "@/components/AgeGroupGrid";
+import DividerContactFooter from "@/components/DividerContactFooter";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -16,6 +18,7 @@ export default function GirlsPage() {
     <>
       <Navbar />
       <ProgramHero program={program} />
+      <DividerHeroAbout />
       <section style={{ padding: "64px 0 80px", background: "#f5f5f5" }} className="section-pad">
         <div style={{ maxWidth: 1200, margin: "0 auto", marginBottom: 48 }}>
           <div className="sec-label" style={{ color: "var(--teal)", marginBottom: 12 }}>
@@ -31,6 +34,7 @@ export default function GirlsPage() {
         </div>
         <AgeGroupGrid program="girls" />
       </section>
+      <DividerContactFooter />
       <Footer />
     </>
   );
